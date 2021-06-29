@@ -1,0 +1,28 @@
+.titulo-tipo{
+	margin:0 auto 50px auto !important;
+	font-weight: 800 !important;
+	font-family: 'Roboto Slab', serif, Roboto, BlinkMacSystemFont;
+	color: #fafafa;
+	padding: 90px 70px 40px 70px;
+	background-image: url(../img-fondo/cartel-flotantes-22-opt.jpg)  !important;
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	max-width: 1180px;
+	border-radius: 2px;
+	text-shadow: 2px 1px grey;
+}
+
+
+@media (max-width: 576px){
+ 	
+	.titulo-tipo{
+		margin: 0 auto 30px auto !important;
+		font-size: 25px;
+		font-weight: 700 !important;
+		font-family: 'Roboto Slab', serif, Roboto, BlinkMacSystemFont;
+		padding: 50px 50px 20px 50px;
+	
+	}
+	
+}

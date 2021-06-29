@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177081931-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177081931-1');
+</script>
+
+<meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MH-Decks Libres de Mantenimiento</title>
+    
+    <link href="../css/barras-style.css" type ="text/css" rel="stylesheet">
+    <link href="css/decks-style.css" type ="text/css" rel="stylesheet">
+    <link href="css/galerias-style.css" type ="text/css" rel="stylesheet">
+	<script src="../js/handlebars.min.js"></script> 
+    <script src="https://kit.fontawesome.com/a8c2ca5087.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:600&display=swap" rel="stylesheet">
+    <script id="producto" type="text/x-handlebars-template">
+      {{#each galeria}}
+        <div class="col-lg-4 col-md-5 col-sm-5 col-11 pics animation all {{this.tipo}} {{this.medida}}">
+            <a class="lightbox-all" name="lightboxall" href="img-decks/{{this.nombreImagen}}" data-lightbox="galeria" data-title="<a href='paginas-decks-caracteristicas/{{this.nombreProducto}}.html'>{{this.nombreProducto}}<span class='mas-detalles'>Ver mas<span></a>" >
+              <img alt="{{this.nombreProducto}}" src="img-decks/{{this.nombreImagen}}" class="img-fluid" />
+            </a>
+            <a class="lightbox-1" name="lightbox1" href="img-decks/{{this.nombreImagen}}" data-lightbox="{{this.tipo}}" data-title="<a href='paginas-decks-caracteristicas/{{this.nombreProducto}}.html'>{{this.nombreProducto}}<span class='mas-detalles'>Mas detalles<span></a>" >
+              <img alt="{{this.nombreProducto}}" src="img-decks/{{this.nombreImagen}}" class="img-fluid" />
+            </a>
+          <a class="lightbox-2" name="lightbox2" href="img-decks/{{this.nombreImagen}}" data-lightbox="{{this.medida}}" data-title="<a href='paginas-decks-caracteristicas/{{this.nombreProducto}}.html'>{{this.nombreProducto}}<span class='mas-detalles'>Mas detalles<span></a>">
+              <img alt="{{this.nombreProducto}}" src="img-decks/{{this.nombreImagen}}" class="img-fluid" />
+            </a>        
+            <a href="paginas-decks-caracteristicas/{{this.nombreProducto}}.html" target="_blank"><h6 class="ver">Ver mas</h6></a>
+        </div>
+      {{/each}}
+
+    </script>
+    <link rel="stylesheet" href="../css/lightbox.css">
+</head>
+<body>
+<nav class="barra-navegacion">
+        <div class="logo">
+            <img src="../logo/logo222.png" alt="logo">
+            <div class="color-logo">
+              <div class="color-animacion"></div>
+            </div>
+        </div>
+        <div class="botonbarra">
+            <a><i class="fas fa-bars"></i></a>
+            <ul class="lista-boton">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../pisos.html">Pisos</a></li>
+              <li><a href="../revestimientos.html">Revestimientos</a></li>
+              <li><a href="../adhesivo.html">Adhesivo</a></li>
+              <li class="barra-4"><a href="../.html"></a></li>
+              <li class="barra-5"><a href="../.html"></a></li>
+              <li><a href="../acercade.html">Acerca de</a></li>
+              <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+            
+        </div>
+        <ul class="lista-navegacion">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pisos.html">Pisos</a>
+                <ul class="sub-lista lista-pisos">
+                    <li class="subbarra-1"><a href="porcelanatos.html">Porcelanatos</a></li>
+                    <li class="subbarra-2"><a href="ceramicos.html">Cerámicos</a></li>
+                    <li class="subbarra-3"><a href="flotantes.html">Flotantes</a></li>
+                    <li class="subbarra-4"><a href="piedra.html">Piedra</a></li>
+                    <li class="subbarra-5"><a href="cementicios.html">Cementicios</a></li>
+                    <li class="subbarra-6"><a href=".html"></a></li>
+                    <li class="subbarra-7 activo"><a href="decks.html">Decks</a></li>
+                    <li class="subbarra-8"><a href=".html"></a></li>
+                    <li class="subbarra-9"><a href=".html"></a></li>
+                </ul>
+            </li>
+            <li><a href="../revestimientos.html">Revestimientos</a>
+                <ul class="sub-lista lista-rev">
+                    <li><a href="../revestimientos/rev-vidrio.html">Vidrio</a></li>
+                    <li><a href="../revestimientos/rev-piedra-laminas.html">Piedra en Láminas</a></li>
+                    <li><a href="../revestimientos/rev-piedra.html">Piedra</a></li>
+                    <li><a href="../revestimientos/rev-ceramicos.html">Cerámicos y Porcelanatos</a></li>
+                    <li><a href="../revestimientos/rev-cementicios.html">Cementicios</a></li>
+                    <li class="subbarra-rev-1"><a href="../revestimientos/.html"></a></li>
+                    <li class="subbarra-rev-2"><a href="../revestimientos/.html"></a></li>
+                    <li class="subbarra-rev-3"><a href="../revestimientos/.html"></a></li>
+                </ul>
+            </li>
+            <li><a href="../adhesivo.html">Adhesivo</a></li>
+            <li class="barra-4"><a href="../.html"></a></li>
+            <li class="barra-5"><a href="../.html"></a></li>
+            <li><a href="../acercade.html">Acerca de</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>            
+        </ul>
+ </nav>
+     
+
+  <section id="contenedor-general" class="contenedor-general-2">
+	    <h1 class="titulo-tipo">DECKS</h1>
+      
+      <div class="galeria">
+      <!-- Grid row -->
+        <div class="row sub-galeria sub-gal-1 hid">
+
+          <!-- Grid column -->
+          <div class="col-md-12 d-flex justify-content-center mb-5 seleccion-tipo hid">
+
+            <button type="button"  onclick="filtro2all()" class="btn btn-outline-black waves-effect filter hid" data-rel="all">Todos</button>
+            <button type="button" onclick="filtro2p1()" class="btn btn-outline-black waves-effect filter hid" data-rel="p1" id="boton-p1">Adoquín Recto</button>
+            <button type="button" onclick="filtro2p2()" class="btn btn-outline-black waves-effect filter hid" data-rel="p2" id="boton-p2">Adoquín Circular</button>
+            <button type="button" onclick="filtro2p3()" class="btn btn-outline-black waves-effect filter hid" data-rel="p3" id="boton-p3">Tipo Laja</button>
+            <button type="button" onclick="filtro2p4()" class="btn btn-outline-black waves-effect filter hid" data-rel="p4"id="boton-p4">Garden</button>
+
+            <div class="filtro-2 col-md-12  justify-content-center mb-5 seleccion-tipo hid" id="filtro-2-p1">
+                <button type="button" onclick="botonp1()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p1-m1">23 x 120</button>
+                <button type="button" onclick="botonp1()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p1-m2">15 x 90</button>
+                <button type="button" onclick="botonp1()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p1-m3">Otros</button>
+                <button type="button" onclick="botonp1()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p1-m4">..</button>
+                <button type="button" onclick="botonp1()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p1-m5">..</button>
+            </div>
+            <div class="filtro-2 col-md-12 justify-content-center mb-5 seleccion-tipo hid" id="filtro-2-p2">
+                <button type="button" onclick="botonp2()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p2-m1">Esmaltado</button>
+                <button type="button" onclick="botonp2()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p2-m2">Pulido</button>
+                <button type="button" onclick="botonp2()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p2-m3">..</button>
+                <button type="button" onclick="botonp2()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p2-m4">..</button>
+                
+            </div>
+
+            <div class="filtro-2 col-md-12 justify-content-center mb-5 seleccion-tipo hid" id="filtro-2-p3">
+                <button type="button" onclick="botonp3()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p3-m1">60x120</button>
+                <button type="button" onclick="botonp3()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p3-m2">75x75</button>
+                <button type="button" onclick="botonp3()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p3-m3">60x60</button>
+                 <button type="button" onclick="botonp3()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p3-m4">Otros</button>
+                
+            </div>
+
+            <div class="filtro-2 col-md-12 justify-content-center mb-5 seleccion-tipo hid" id="filtro-2-p4">
+              <!--   <button type="button" onclick="botonp4()" class="btn-2 btn-outline-black waves-effect filter" data-rel="p4-m1">33 x 33</button>
+                <button type="button" onclick="botonp4()" class="btn-2 btn-outline-black waves-effect filter" data-rel="p4-m2">58 x 58</button>
+                <button type="button" onclick="botonp4()" class="btn-2 btn-outline-black waves-effect filter" data-rel="p4-m3">58 x 58</button>
+                <button type="button" onclick="botonp4()" class="btn-2 btn-outline-black waves-effect filter" data-rel="p4-m4">20 x 100</button>
+                <button type="button" onclick="botonp4()" class="btn-2 btn-outline-black waves-effect filter" data-rel="p4-m5">20 x 90</button> -->
+            </div>
+          </div>
+          
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+        <div class="row sub-galeria sub-gal-2 hid">
+
+          <!-- Grid column -->
+          <div class="col-md-12 justify-content-center seleccion-tipo responsive-all-576">
+
+             <button type="button"  onclick="filtro2allresp()" class="btn btn-outline-black waves-effect filter resp-576-width hid" data-rel="all">Todos</button>
+          </div>
+          <div class="col-md-12 d-flex justify-content-center seleccion-tipo">
+
+            <button type="button"  onclick="filtro2allresp()" class="btn btn-outline-black waves-effect filter responsive-no-all-576 hid resp-576-width" data-rel="all">Todos</button>
+            <button type="button" onclick="filtro2p1resp()" class="btn btn-outline-black waves-effect filter resp-576-width hid" data-rel="p1" id="boton-p1-resp">Adoquín Recto</button>
+            <button type="button" onclick="filtro2p2resp()" class="btn btn-outline-black waves-effect filter resp-576-width hid" data-rel="p2" id="boton-p2-resp">Adoquín Circular</button>
+            
+          </div> 
+          <div class="filtro-3 col-md-12  justify-content-center mb-2 seleccion-tipo-2" id="filtro-2-p1-resp">
+                <button type="button" onclick="botonp1resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p1-m1">23 x 120</button>
+                <button type="button" onclick="botonp1resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p1-m2">24 x 95</button>
+                <button type="button" onclick="botonp1resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p1-m3">15 x 90</button>
+                <button type="button" onclick="botonp1resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p1-m4">15 x 60</button>
+                <button type="button" onclick="botonp1resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p1-m5">Otros</button>
+            </div>
+            <div class="filtro-3 col-md-12 justify-content-center mb-2 seleccion-tipo-2" id="filtro-2-p2-resp">
+                <button type="button" onclick="botonp2resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p2-m1">60 x 120</button>
+                <button type="button" onclick="botonp2resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p2-m2">60 x 60</button>
+                <button type="button" onclick="botonp2resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p2-m3">58 x 58</button>
+                <button type="button" onclick="botonp2resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p2-m4">Otros</button>
+            </div>
+          <div class="col-md-12 d-flex justify-content-center mb-2 seleccion-tipo">
+            <button type="button" onclick="filtro2p3resp()" class="btn btn-outline-black waves-effect filter resp-576-width hid" data-rel="p3" id="boton-p3-resp">Tipo Laja</button>
+            <button type="button" onclick="filtro2p4resp()" class="btn btn-outline-black waves-effect filter resp-576-width hid" data-rel="p4" id="boton-p4-resp">Garden</button>
+          </div>
+          <div class="filtro-3 col-md-12 justify-content-center mb-2 seleccion-tipo-2" id="filtro-2-p3-resp">
+                <button type="button" onclick="botonp3resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p3-m1">Pulidos</button>
+                <button type="button" onclick="botonp3resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p3-m2">Esmaltados</button>
+            </div>
+
+            <div class="filtro-3 col-md-12 justify-content-center mb-2 seleccion-tipo-2" id="filtro-2-p4-resp">
+                <button type="button" onclick="botonp4resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p4-m1">33 x 33</button>
+                <button type="button" onclick="botonp4resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p4-m2">58 x 58</button>
+                <button type="button" onclick="botonp4resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p4-m3">58 x 58</button>
+                <button type="button" onclick="botonp4resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p4-m4">20 x 100</button>
+                <button type="button" onclick="botonp4resp()" class="btn-2 btn-outline-black waves-effect filter hid" data-rel="p4-m5">20 x 90</button>
+            </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- First row -->
+
+        <div class="prueba gallery" id="gallery">
+
+        </div>
+      </div>
+  </section>
+   <footer>
+      <div class="logo logo-footer">
+            <img src="logo/logo222.png" alt="logo">
+            <div class="color-logo">
+              <div class="color-animacion"></div>
+            </div>
+      </div>
+      <div class="direccion"><p>Av. Ignacio de la Roza 1627 Oeste. San Juan, Capital.</p></div>
+      <div class="icofoo">
+          <a href="https://www.facebook.com/pisosrevestallentiac/" target="_blanck" class="ico-mas-ancho"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/modernhome_allentiac/" target="_blanck" class="ico-mas-ancho"><i class="fab fa-instagram"></i></a>
+          <a href="https://allentiac-pisos-y-revestimientos.negocio.site/" target="_blanck"><img src="logo/google-bussines.png" alt=" logo google bussines"></a>
+          
+      </div>
+      
+  </footer>
+	  <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="js-pisos/galeria.js"></script>
+    <script src="../js/lightbox.js"></script>
+    <script src="js-pisos/decks.js" type="text/javascript"></script>
+</body>
+</html>

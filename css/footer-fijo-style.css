@@ -1,0 +1,88 @@
+footer{
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    z-index: 100;
+    display: -webkit-flex !important;
+    display: -moz-flex !important;
+    display: -ms-flex !important;
+    display: -o-flex !important;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+  align-items: center;
+   margin-top: 40px;
+  }
+  .icofoo{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+    margin-right: 20px;
+  }
+  .icofoo > a{
+     height: 29px;
+  }
+  .icofoo > a > i{
+    font-size: 25px;
+    line-height: 20px;
+    border-radius: 3px;
+    width: 21px;
+    margin-left: 3px;
+    margin: 5px;
+  }
+  .icofoo > a > img{
+    line-height: 0px;
+    width: 45px;
+    margin-left: 0px;
+    
+  }
+  .ico-mas-ancho{
+    padding: 0 5px;
+  }
+  .icofoo > a:hover > i{
+    transform:scale(1.3);
+    cursor: pointer;
+  }
+  .icofoo > a:hover > img{
+    transform:scale(1.3);
+    cursor: pointer;
+  }
+  .direccion{
+    color: white;
+    font-size: 15px;
+  }
+  .direccion > p{
+    margin: 0;
+  }
+.fa-facebook-square{
+  color:#3b5998;
+  background-color: white;
+
+}
+.fa-instagram{
+  background: linear-gradient(to top, rgb(255,220,128),rgb(252,175,69),rgb(247,119,55),rgb(245,96,64),rgb(253,29,29),rgb(225,48,108),rgb(193,53,132),rgb(131,58,180),rgb(88,81,219),rgb(64,93,230)) ;
+  color: white;
+  border-radius: 3px;
+  font-weight: lighter !important;
+}
+.fa-phone-volume{
+  color: #0097FF;
+}
+@media (max-width: 960px){
+  .direccion, .logo-footer{
+    display: none;
+  }
+ .icofoo{
+  width: 100%;
+  justify-content: space-around;
+  margin-right: 0;
+ }
+}

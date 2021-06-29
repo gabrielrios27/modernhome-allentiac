@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+::after, ::before {
+    box-sizing: border-box;
+}
+.form_wrap{
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../../img-fondo/contacto5-opt.jpg);
+	background-size: cover;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mensaje-exito{
+	width: 400px;
+	height: 170px;
+	background-color: rgba(250,250,250,0.7);
+	border-radius: 4px;
+}
+.mensaje-exito > h1, h3{
+	margin: 20px;
+	text-align: center;
+}
+.mensaje-exito > a{
+	display:block;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	color: #08088A;
+	padding: 7px;
+	border: solid 1px grey;
+	background: linear-gradient(to bottom, rgba(160,160,160,0), rgba(160,160,160,0.1) )
+}
+@media (max-width: 960px){
+	.form_wrap{
+		background-image: url(../../img-fondo/contacto5-960w-opt.jpg);
+	}
+	.mensaje-exito{
+		height: auto;
+	}
+}
+@media (max-width: 576px){
+	.form_wrap{
+		background-image: url(../../img-fondo/contacto5-576w-opt.jpg);
+	}
+}

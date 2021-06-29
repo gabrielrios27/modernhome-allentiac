@@ -1,0 +1,44 @@
+
+
+.tarjetas{
+    max-width: 1000px;
+    width: 70%;
+    display: inline-block;
+    margin: 30px auto 40px auto;
+}
+
+.tarjetas > p{
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  font-family: Merriweather;
+
+}
+
+.card{
+  margin: 10px 0;
+}
+.card img{
+  width: 100%;
+  height: 50%;
+}
+.card > a{
+  color: rgb(33, 37, 41);
+  transition: 0.4s;
+  height: 100%;
+}
+.card > a:hover{
+  color: rgb(254, 254, 254);
+  background-color: rgba(30, 30, 30,0.8);
+}
+@media (max-width: 960px){
+ .tarjetas{
+    width: 80%;
+  }
+}
+@media (max-width: 576px){
+  .tarjetas > p{
+    font-size: 26px;
+  }
+
+}

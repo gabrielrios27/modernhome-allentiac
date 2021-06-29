@@ -1,0 +1,30 @@
+.titulo-tipo{
+	margin: 60px auto 50px auto !important;
+	font-weight: 800 !important;
+	font-family: 'Roboto Slab', serif, Roboto, BlinkMacSystemFont;
+	color: #f5f5f5;
+	padding: 20px 30px 20px 30px;
+	background-image: url(../img-fondo/fondo-piedrafina-6.png) !important;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	max-width: 1180px;
+	border-radius: 3px;
+}
+
+
+@media (max-width: 576px){
+
+	.titulo-tipo{
+		margin: 60px auto 40px auto !important;
+		font-size: 25px;
+		font-weight: 700 !important;
+		font-family: 'Roboto Slab', serif, Roboto, BlinkMacSystemFont;
+		color: #f5f5f5;
+		padding: 20px 30px 20px 30px;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+	}
+
+}

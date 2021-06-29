@@ -1,0 +1,33 @@
+.titulo-tipo{
+	margin:0 auto 50px auto !important;
+	font-weight: 800 !important;
+	font-family: 'Roboto Slab', serif, Roboto, BlinkMacSystemFont;
+	color: #202020;
+	padding: 80px 90px 30px 90px;
+	background-image: url(../img-fondo/cartel-32.jpg)  !important;
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	max-width: 1180px;
+	border-radius: 2px;
+	
+	text-shadow: 1px 0 grey;
+}
+
+
+@media (max-width: 576px){
+ 	
+	.titulo-tipo{
+		margin: 0 auto 30px auto !important;
+		font-size: 25px;
+		font-weight: 700 !important;
+		font-family: 'Roboto Slab', serif, Roboto, BlinkMacSystemFont;
+		color: #202020;
+		padding: 50px 50px 20px 50px;
+		background-image: url(../img-fondo/cartel-32.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+
+	}
+	
+}

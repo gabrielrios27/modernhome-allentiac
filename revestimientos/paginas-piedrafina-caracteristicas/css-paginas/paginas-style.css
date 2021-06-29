@@ -1,0 +1,217 @@
+body{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	
+}
+.barra-navegacion{
+	/*position: relative !important;*/
+}
+.contenedor{
+	position: relative;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 50px;
+	width: 100%;
+	z-index: 10;
+	flex-direction: row-reverse;
+}
+.carrusel{
+	width: 55%;
+	padding: 10px 10px 0 10px ;
+	box-sizing: border-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.carousel{
+	width: 100%;
+}
+.carousel-thumbnails .carousel-indicators>li {
+    width: initial;
+    height: 75px;
+    text-indent: initial;
+}
+.carousel .carousel-indicators li {
+    cursor: pointer;
+    border-radius: 50%;
+}
+.carousel-indicators > li > img{
+	border: 1px solid grey;
+	height: 70px;
+}
+.carousel-item > a > img {
+	border: 1px solid grey;
+}
+.carousel-thumbnails .carousel-indicators {
+    position: static;
+    left: initial;
+    width: initial;
+    margin-right: initial;
+    margin-left: initial;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.carousel-item > a > img{
+	height: 476px;
+	width: auto;
+	object-fit: cover;
+}
+/*--------------------detalles-------------------*/
+.detalles{
+	width: 45%;
+	padding: 0 20px 20px 20px;
+	overflow-x: hidden;
+}
+.cartel-nombre{
+	display: none;
+	width: 320px;
+	height: 90px;
+	margin: 60px auto 0 auto;
+	background-image: url(../../img-fondo/fondo-piedrafina-5.jpg) !important;
+	background-size: cover;
+	background-position: bottom;
+	justify-content: center;
+	align-items: flex-end;
+	margin-bottom: 30px;
+	border-radius: 3px;
+	padding: 0 20px;
+}
+.xl{
+	width: 380px !important;
+	height: 127px !important;
+}
+.xm{
+    width: 400px !important;
+    height: 90px !important;
+}
+
+.cartel-largo{
+	width: 420px !important;
+}
+.xs{
+    width: 320px !important;
+    height: 90px !important;
+}
+.detalles > div{
+	position: relative;
+	width: 400px;
+	height: 90px;
+	margin: 60px auto 0 auto;
+	background-image: url(../../img-fondo/fondo-piedrafina-5.jpg) !important;
+	background-size: cover;
+	background-position: bottom;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+
+.detalles > div > h1, .cartel-nombre > h1{
+	text-align: center;
+	margin-bottom: 20px;
+	color: #f4f4f4;
+	font-weight: 600;
+	text-shadow: 0.5px 0 black;
+}
+.precio{
+	margin: 20px 0;
+}
+.detalles > h5{
+	font-weight: 600;
+	text-shadow: 0.5px 0 black;
+	text-align: center;
+    max-width: 450px !important;
+    margin: 8px auto;
+}
+.detalles > h5 > span{
+	color: #000050;
+	font-weight: 500 !important;
+}
+
+.cuadrados-fondo{
+	position: absolute;
+	bottom: 40%;
+	right: 0;
+	/*transform: rotateZ(-90deg);*/
+	width: 250px;
+	z-index: -1;
+	opacity: 0.3;
+}
+@media (max-width: 960px){
+	.contenedor{
+		flex-direction: column-reverse;
+	}
+	.detalles{
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		padding-bottom: 30px;
+	}
+	.detalles > div{
+		display: none;
+	}
+	.cartel-nombre{
+		display: flex;
+	}
+	.carrusel{
+		padding-top: 0;
+		width: 100%;
+	}
+	.cuadrados-fondo{
+		position: absolute;
+		bottom: 10px;
+		right: 0px;
+		transform: rotateZ(-45deg);
+		width: 350px;
+
+	}
+	.detalles > h5{
+		margin-left: 7%;
+	}
+}
+@media (max-width: 576px){
+	.cuadrados-fondo{
+		opacity: 0.15;
+	}
+	.cartel-nombre{
+		width: 240px;
+		height: 70px;
+		margin-bottom: 20px;
+	}
+	.xs{
+    width: 210px !important;
+    height: 70px !important;
+}
+.xm{
+    width: 280px !important;
+    height: 70px !important;
+}
+.xl{
+    width: 275px !important;
+    height: 100px !important;
+}
+	.cartel-nombre > h1{
+		font-size: 30px;
+		margin-bottom: 14px;
+	}
+	.carousel-item > a > img{
+		height: 300px;
+	}
+	.carousel-indicators > li > img{
+		width: 70px;
+		height: 55px;
+	}
+}
