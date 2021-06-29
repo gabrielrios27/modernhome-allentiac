@@ -248,7 +248,10 @@ li{
   color: #fdfdfd;
   transform: scale(1.1);
 }
-
+.justify-content-center{
+  display:flex;
+  justify-content:center;
+}
 
 /*---------------------tarjetas------------------------*/
 .contenedor-general{
